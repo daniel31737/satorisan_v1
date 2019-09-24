@@ -1,0 +1,71 @@
+.skip-links {
+    float: right;
+    width: 40%;
+    text-align: right;
+    padding-top: 26px;
+    .account-cart-wrapper {
+        position: relative;
+        .header-minicart {
+            float: right;
+            display: inline-block;
+        }
+        .header-link {
+            padding: 0;
+            line-height: 22px;
+            height: 22px;
+            margin: 11px 0;
+            border-right: 1px solid #aeaeae;
+            border-left: 1px solid #aeaeae;
+            span {
+                font: normal 14px "maison_neuebold", Verdana, Arial, sans-serif;
+                line-height: 22px;
+                height: 22px;
+                display: block;
+                padding: 0 10px;
+                margin: 0 10px;
+                max-width: 300px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .store-language-container {
+                float: right;
+                position: relative;
+                width: 85px;
+            }
+            #header-search {
+                display: block;
+                padding: 0;
+                float: right;
+                position: relative;
+                .input-box {
+                    #search {
+                        width: 0;
+                        height: 64px;
+                        border: 0 solid #6c1;
+                        background: #6c1;
+                        color: #000;
+                        font-family: "maison_neuemedium",Verdana,Arial,sans-serif;
+                        padding: 0;
+                        margin-top: -10px;
+                        position: absolute;
+                        right: -1px;
+                        top: 0;
+                    }
+                    .search-button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 44px;
+                        min-width: 44px;
+                        height: 44px;
+                        border: 0;
+                        padding: 0;
+                        background: none;
+                        font-family: "onestic";
+                    }
+                }
+            }
+        }
+    }
+}
