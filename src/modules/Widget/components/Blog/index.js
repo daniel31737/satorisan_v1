@@ -45,16 +45,20 @@ const imageBlog = [
 ]
 
 const imageItem = (imageBlog) => {
-    const itemImage = imageBlog.map((value, index) => {
-        return (
-            <div className="blog-item">
-                <a href="/" key={index}>
-                    <img src={value.imageSrc} alt={value.alt} />
-                </a>
-            </div>
-        )
-    })
-    return itemImage;
+
+    if (imageBlog !== null) {
+        const itemImage = imageBlog.map((value, index) => {
+            return (
+                <div className="blog-item" key={index}>
+                    <a href="/">
+                        <img src={value.imageSrc} alt={value.alt} />
+                    </a>
+                </div>
+            )
+        })
+        return itemImage;
+    }
+    return null;
 }
 
 export default function Blog() {

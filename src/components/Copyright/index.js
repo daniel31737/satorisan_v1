@@ -20,6 +20,7 @@ const items = {
             alt: "paypal"
         }
     ],
+
     socials: [
         {
             path: "https://www.facebook.com",
@@ -36,33 +37,46 @@ const items = {
     ]
 }
 
-export default function Copyright() {
+const showInfoPayment =  () => {
+    if(items.payments !== null) {
+        const infoPayment = items.payments.map((payment, index) => {
+            return (
+                <li key={index}>
+                    <img src={payment.src} alt={payment.alt} />
+                </li>
+            )
+        })
+        return infoPayment;
+    }
+    return null;
+}
 
-    const infoPayment = items.payments.map((payment, index) => {
-        return (
-            <li>
-                <img src={payment.src} alt={payment.alt} />
-            </li>
-        )
-    })
-    const infoSocial = items.socials.map((social, index) => {
-        return (
-            <li key={index}>
-                <a href={social.path}><ion-icon name={social.icon}></ion-icon></a>
-            </li>
-        )
-    })
+const showInfoSocial = () => {
+    if(items.socials !== null) {
+        const infoSocial = items.socials.map((social, index) => {
+            return (
+                <li key={index}>
+                    <a href={social.path}><ion-icon name={social.icon}></ion-icon></a>
+                </li>
+            )
+        })
+        return infoSocial;
+    }
+    return null;
+}
+
+export default function Copyright() {
     return (
         <div className="footer-end">
             <div className="payment">
                 <ul className="payment-logo">
-                    {infoPayment}
+                    {showInfoPayment()}
                 </ul>
             </div>
             <div className="social-copyright">
                 <div className="social">
                     <ul>
-                        {infoSocial}
+                        {showInfoSocial()}
                     </ul>
                 </div>
                 <div className="copyright">

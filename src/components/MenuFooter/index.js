@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import routes from 'routes';
 
 const showMenuFooter = (routes) => {
-    var result = null;
-    result = routes.map((route, index) => {
+    let result = routes.map((route, index) => {
         return (
             <Route
                 key={index}
@@ -19,8 +18,8 @@ const showMenuFooter = (routes) => {
                                 {
                                     route.resources.map((subMenu, index) => {
                                         return (
-                                            <li>
-                                                <Link href="/">{subMenu.name}</Link>
+                                            <li key={index}>
+                                                <Link to="/">{subMenu.name}</Link>
                                             </li>
                                         )
                                     })

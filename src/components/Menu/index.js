@@ -4,8 +4,7 @@ import './style.scss';
 import routes from '../../routes';
 
 const showMenus = (routes) => {
-    let result = null;
-    result = routes.map((menu, index) => {
+    let result = routes.map((menu, index) => {
         return <Route
             key={index}
             path={menu.path}

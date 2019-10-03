@@ -30,23 +30,27 @@ const abouts = [
 ]
 
 const infoAbout = (abouts) => {
-    let about = abouts.map((item, index) => {
-        return (
-            <div className={item.float} key={index}>
-                <div className="info-about">
-                    <div className="center-div">
-                        <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                        <Button path="/" padding="14px 50px" value={item.valueButton} />
+    
+    if (abouts !== null) {
+        let about = abouts.map((item, index) => {
+            return (
+                <div className={item.float} key={index}>
+                    <div className="info-about">
+                        <div className="center-div">
+                            <h2>{item.title}</h2>
+                            <p>{item.description}</p>
+                            <Button path="/" padding="14px 50px" value={item.valueButton} />
+                        </div>
+                    </div>
+                    <div className="image-about">
+                        <img src={item.image} alt={item.alt} />
                     </div>
                 </div>
-                <div className="image-about">
-                    <img src={item.image} alt={item.alt} />
-                </div>
-            </div>
-        )
-    })
-    return about;
+            )
+        })
+        return about;
+    }
+    return null;
 }
 
 export default function About() {
