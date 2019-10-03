@@ -1,0 +1,51 @@
+@mixin aboutContent($float1, $float2) {
+    line-height: 0;
+    border: 0;
+    clear: both;
+    height: 442px;
+    display: block;
+    background-color: #FFF;
+    .info-about {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        float: $float1;
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        line-height: 10px;
+        .center-div {
+            margin: auto;
+            width: 100%;
+            h2 {
+                font-size: 40px;
+                letter-spacing: -3px;
+            }
+            p {
+                margin-bottom: 40px;
+            }
+            a {
+                border: 2px solid black;
+            }
+        }
+    }
+    .image-about {
+        width: 50%;
+        float: $float2;
+        img {
+            width: 100%;
+            border: 0;
+        }
+    }
+}
+
+.main-about {
+    margin: 0 auto;
+    padding: 0;
+    .about-content-left {
+        @include aboutContent(left, right);
+    }
+    .about-content-right {
+        @include aboutContent(right, left);
+    }
+}

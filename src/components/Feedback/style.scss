@@ -1,0 +1,55 @@
+.feedback {
+    position: relative;
+    float: left;
+    padding: 90px 0 30px 0;
+    color: black;
+    .label {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .frm-submit {
+        color: black;
+        margin-bottom: 15px;
+        input {
+            border: 1px solid #EEE;
+            background-color: #EEE;
+            padding: 15px;
+            width: 400px;
+            color: black;
+            font-size: 18px;
+        }
+        button {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: #fff;
+            width: 200px;
+            margin-left: 10px;
+            font-size: 18px;
+            &:hover {
+                background-color: black;
+                color: #6c1;
+            }
+        }
+    }
+    .frm-checkbox {
+        margin-bottom: 15px;
+        font-size: 18px;
+        height: auto;
+        input {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            padding: 6px 5px;
+            background: #FFF;
+        }
+        label {
+            position: absolute;
+            padding-left: 20px;
+            padding-top: 8px;
+            font-size: 16px;
+        }
+    }
+    hr {
+        width: 940px;
+    }
+}

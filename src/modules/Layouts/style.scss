@@ -1,0 +1,119 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: transparent;
+    border-bottom: 0px solid #DDD;
+    color: white;
+    #white-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        z-index: 0;
+        border-bottom: 0px solid #DDD;
+        background: #FFF;
+    }
+    .header-wrapper {
+        position: relative;
+        // z-index: 2;
+        max-width: 1260px;
+        height: 121px;
+        margin: 0 auto;
+        text-align: center;
+        .logo {
+            .logo-container {
+                background: url(https://satorisan.com/skin/frontend/satorisan/default/images/logo.svg) no-repeat;
+                filter: invert(1);
+                background-size: contain;
+                height: 80px;
+                width: 72px;
+            }
+        }
+        .nav-primary {
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+        .account-cart-wrapper {
+            a {
+                color: white;
+            }
+            button {
+                color: white;
+            }
+        }
+    }
+}
+
+.header-container-fixed {
+    height: 70px;
+    position: fixed;
+    background-color: white;
+    z-index: 12;
+    width: 100%;
+    padding: 0 15px;
+    border-bottom: 0px solid #DDD;
+    #white-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        z-index: 0;
+        border-bottom: 0px solid #DDD;
+        background: #FFF;
+    }
+    .header-wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: 1260px;
+        margin: 0 auto;
+        text-align: center;
+        #header-nav {
+            #nav {
+                padding: 5px 0;
+            }
+        }
+        .skip-links {
+            #skip-links-wrapper {
+                padding: 19px 0;
+            }
+        }
+        .logo {
+            max-width: 42px;
+            padding-top: 15px;
+            .logo-container {
+                background: url(https://satorisan.com/skin/frontend/satorisan/default/images/logo-without-name.svg) no-repeat;
+                filter: invert(0);
+                height: 42px;
+                width: 38px;
+                background-size: contain;
+            }
+        }
+        .nav-primary {
+            li {
+                a {
+                    color: black;
+                }
+            }
+        }
+        .account-cart-wrapper {
+            a {
+                color: black;
+            }
+            button {
+                color: black;
+            }
+        }
+    }
+    
+}

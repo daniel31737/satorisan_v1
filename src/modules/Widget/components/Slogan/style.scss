@@ -1,0 +1,24 @@
+.main-slogan {
+    position: relative;
+    text-align: center;
+    background-color: #EEE;
+    h1 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        font-size: 93px;
+        color: #cf761c;
+        letter-spacing: -5px;
+        margin-top: -70px;
+        z-index: 9;
+        opacity: 1;
+        mix-blend-mode: multiply;
+    }
+    .slogan-title {
+        padding: 115px 0;
+        margin: 0 auto;;
+        span {
+            font-size: 36px;
+        }
+    }
+}

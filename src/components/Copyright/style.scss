@@ -1,0 +1,61 @@
+.footer-end {
+    clear: both;
+    width: 100%;
+    .payment {
+        padding: 40px 0;
+        width: 100%;
+        float: left;
+        .payment-logo {
+            margin: 0 auto;
+            list-style: none;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            li {
+                float: left;
+                margin-right: 10px;
+                width: 25%;
+                img {
+                    max-width: 100px;
+                    width: 75%;
+                }
+            }
+        }
+    }
+    .social-copyright {
+        width: 100%;
+        padding: 0;
+        .social {
+            float: left;
+            text-align: left;
+            ul {
+                list-style: none;
+                margin-left: -45px;
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+                    a {
+                        font-size: 40px;
+                        color: black;
+                        &:hover {
+                            color: #6c1;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            max-width: 100%;
+            float: right;
+            margin-top: 15px;
+            label {
+                margin-top: 20px;
+            }
+            img {
+                margin-left: 20px;
+                width: 36px;
+                position: relative;
+            }
+        }
+    }
+}

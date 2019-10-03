@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.scss';
-import Header from './components/Header';
+import Layouts from './modules/Layouts';
 
 function App() {
     return (
         <div className="wrapper">
-            <Header />
+            <Layouts />
         </div>
     );
 }

@@ -1,0 +1,71 @@
+.store-language-container {
+    position: relative;
+    width: 20%;
+    border-left: 1px solid #aeaeae;
+    .current-language {
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        padding: 6px 0;
+        .icon-country {
+            float: left;
+            width: 50%;
+            margin-top: 2px;
+        }
+        span {
+            width: 50%;
+        }
+    }
+    .store-selector {
+        display: none;
+    }
+    &:hover {
+        .store-selector {
+            padding-top: 17px;
+            display: block;
+            position: absolute;
+            top: auto;
+            right: -60px;
+            .selector-container {
+                position: relative;
+                width: 350px;
+                height: 420px;
+                border: 10px solid #6c1;
+                padding: 0 30px;
+                background: #FFF;
+                text-align: left;
+                line-height: 50px;
+                list-style: none;
+                label {
+                    font-size: 18px;
+                }
+                select {
+                    width: 100%;
+                    font-size: 15px;
+                    height: 70px;
+                    padding: 20px 30px;
+                    background-color: #f6f7f9;
+                    border: #FFF;
+                    color: black;
+                    &:hover {
+                        background-color: #6c1;
+                    }
+                    option {
+                        background-color: #f6f7f9;
+                        &:hover {
+                            background-color: #FFF;
+                        }
+                    }
+                }
+                button {
+                    background-color: #6c1;
+                    float: right;
+                    font-size: 18px;
+                    height: 44px;
+                    width: 180px;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.menu-footer {
+    padding: 0;
+    margin: 0 auto;
+    float: right;
+    clear: both;
+    .menu-link {
+        float: left;
+        p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #A4A4A4;
+            font-size: 10px;
+        }
+        ul {
+            min-height: 120px;
+            min-width: 195px;
+            margin-bottom: 30px;
+            li {
+                margin-left: -40px;
+                list-style-type: none;
+                padding: 4px 0;
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: black;
+                    &:hover {
+                        text-decoration: line-through #6c1;
+                    }
+                }
+            }
+        }
+    }
+    hr {
+        width: 940px;
+        float: left;
+    }
+}
