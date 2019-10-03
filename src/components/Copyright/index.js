@@ -56,7 +56,9 @@ const showInfoSocial = () => {
         const infoSocial = items.socials.map((social, index) => {
             return (
                 <li key={index}>
-                    <a href={social.path}><ion-icon name={social.icon}></ion-icon></a>
+                    <a href={social.path}>
+                        <ion-icon name={social.icon}></ion-icon>
+                    </a>
                 </li>
             )
         })

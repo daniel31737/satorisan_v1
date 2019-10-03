@@ -22,7 +22,9 @@ export default class SkipLinks extends Component {
                     <div id="header-search">
                         <div className="input-box">
                             <input style={{display: isShow ? 'block' : 'none'}} className="search-input" type="search"></input>
-                            <button className="search-button" onClick={this.showInput}><ion-icon name="search"></ion-icon></button>
+                            <button className="search-button" onClick={this.showInput}>
+                                <ion-icon name="search"></ion-icon>
+                            </button>
                         </div>
                     </div>
                     <Lannguage />
