@@ -3,6 +3,7 @@ import './style.scss';
 import axios from 'axios';
 
 export default class Lannguage extends Component {
+
     constructor() {
         super();
         this.state = {
@@ -14,9 +15,10 @@ export default class Lannguage extends Component {
         axios.get("https://restcountries.eu/rest/v2/all")
             .then(res => {
                 const countries = res.data;
-                this.setState({
-                    countries
-                })
+                this.setState({ countries })
+            })
+            .catch(error => {
+                return error
             })
     }
 

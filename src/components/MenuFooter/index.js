@@ -2,8 +2,10 @@ import React from 'react'
 import './style.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import routes from 'routes';
+import SubMenuFooter from 'components/MenuFooter/components/SubMenuFooter';
 
 const showMenuFooter = (routes) => {
+
     let result = routes.map((route, index) => {
         return (
             <Route
@@ -18,9 +20,7 @@ const showMenuFooter = (routes) => {
                                 {
                                     route.resources.map((subMenu, index) => {
                                         return (
-                                            <li key={index}>
-                                                <Link to="/">{subMenu.name}</Link>
-                                            </li>
+                                            <SubMenuFooter subMenuFooter={subMenu} key={index} />
                                         )
                                     })
                                 }

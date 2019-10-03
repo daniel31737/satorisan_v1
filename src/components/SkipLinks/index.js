@@ -3,6 +3,7 @@ import './style.scss';
 import Lannguage from 'components/Language';
 
 export default class SkipLinks extends Component {
+    
     constructor() {
         super();
         this.state = {

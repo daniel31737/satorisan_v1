@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './style.scss';
-import routes from '../../routes';
+import routes from 'routes';
+import SubMenu from 'components/Menu/components/SubMenu';
 
 const showMenus = (routes) => {
+
     let result = routes.map((menu, index) => {
         return <Route
             key={index}
@@ -17,18 +19,17 @@ const showMenus = (routes) => {
                         </Link>
                         <div className="dropmenu">
                             <p>{menu.label}</p>
-                            <ul key={index}>
+                            <ul>
                                 {
                                     menu.resources.map((subMenu, index) => {
                                         return (
-                                            <li key={index}>
-                                                <Link to={subMenu.path}>{subMenu.name}</Link>
-                                            </li>
+                                            <SubMenu subMenu={subMenu} key={index} />
                                         )
                                     })
                                 }
                             </ul>
                         </div>
+
                     </li>
                 );
             }}

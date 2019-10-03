@@ -3,9 +3,8 @@ import './style.scss';
 
 export default class Button extends Component {
     render() {
-        const infoButton = this.props;
         return (
-            <a className="button" href={infoButton.path} style={{ padding: infoButton.padding }}>{infoButton.value}</a>
+            <a className="button" href={this.props.path} style={{ padding: this.props.padding }}>{this.props.value}</a>
         )
     }
 }
