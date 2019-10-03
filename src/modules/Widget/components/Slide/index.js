@@ -3,6 +3,7 @@ import './style.scss';
 import Button from 'components/Button';
 
 export default function Slide() {
+    
     return (
         <div className="main-slide">
             <div className="slide-content">

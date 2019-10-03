@@ -62,6 +62,7 @@ const imageItem = (imageBlog) => {
 }
 
 export default function Blog() {
+    
     return (
         <div className="main-blog">
             <h2>#satorisan</h2>

@@ -38,6 +38,7 @@ const items = {
 }
 
 const showInfoPayment =  () => {
+
     if(items.payments !== null) {
         const infoPayment = items.payments.map((payment, index) => {
             return (
@@ -52,6 +53,7 @@ const showInfoPayment =  () => {
 }
 
 const showInfoSocial = () => {
+
     if(items.socials !== null) {
         const infoSocial = items.socials.map((social, index) => {
             return (
@@ -68,6 +70,7 @@ const showInfoSocial = () => {
 }
 
 export default function Copyright() {
+    
     return (
         <div className="footer-end">
             <div className="payment">

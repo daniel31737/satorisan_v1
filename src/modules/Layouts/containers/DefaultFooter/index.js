@@ -5,6 +5,7 @@ import Copyright from 'components/Copyright';
 import './style.scss';
 
 export default function DefaultFooter() {
+    
     return (
         <div className="footer-container">
             <div className="footer">

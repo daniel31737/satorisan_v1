@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss';
 
 export default function Slogan() {
+    
     return (
         <div className="main-slogan">
             <h1>Keep discovering ▼</h1>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import routes from 'routes';
 import SubMenuFooter from 'components/MenuFooter/components/SubMenuFooter';
 
@@ -35,6 +35,7 @@ const showMenuFooter = (routes) => {
 }
 
 export default function MenuFooter() {
+
     return (
         <div className="menu-footer">
             <h2>Satorisan.com</h2>

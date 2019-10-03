@@ -54,6 +54,7 @@ const infoAbout = (abouts) => {
 }
 
 export default function About() {
+    
     return (
         <div className="main-about">
             {infoAbout(abouts)}

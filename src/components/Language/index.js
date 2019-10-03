@@ -28,6 +28,7 @@ export default class Lannguage extends Component {
                 <option key={index} value={items.name}>{items.name}</option>
             )
         })
+        
         return (
             <span className="store-language-container">
                 <div className="current-language">

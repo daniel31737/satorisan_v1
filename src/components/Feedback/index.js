@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss';
 
 export default function Feedback() {
+    
     return (
         <div className="feedback">
             <form>

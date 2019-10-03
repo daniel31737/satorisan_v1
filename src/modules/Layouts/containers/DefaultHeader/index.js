@@ -4,6 +4,7 @@ import SkipLinks from 'components/SkipLinks';
 import LogoContainer from 'components/Logo';
 
 export default function DefaultHeader() {
+    
     return (
         <React.Fragment>
             <Menu />

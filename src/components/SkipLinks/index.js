@@ -17,6 +17,7 @@ export default class SkipLinks extends Component {
 
     render() {
         const { isShow } = this.state;
+        
         return (
             <div className="skip-links">
                 <div id="skip-links-wrapper" className="account-cart-wrapper">
